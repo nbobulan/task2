@@ -1,7 +1,7 @@
 {
 	"info": {
 		"name": "Task2",
-		"_postman_id": "b0d7e52c-b3f6-1cda-1793-bcf6326afa57",
+		"_postman_id": "05721f40-dc1f-3115-f14b-3579592c0400",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -9,11 +9,183 @@
 		{
 			"name": "Task2",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "nbobulan",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": ""
+					"raw": "http://172.30.27.127:8080/rest/auth/1/session",
+					"protocol": "http",
+					"host": [
+						"172",
+						"30",
+						"27",
+						"127"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"auth",
+						"1",
+						"session"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Task2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "nbobulan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://172.30.27.127:8080/rest/auth/1/session",
+					"protocol": "http",
+					"host": [
+						"172",
+						"30",
+						"27",
+						"127"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"auth",
+						"1",
+						"session"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Task2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "nbobulan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fields\": {\n       \"project\":\n       { \n          \"key\": \"SIM\"\n       },\n       \"summary\": \"Test\",\n       \"description\": \"Creating post request\",\n       \"issuetype\": {\n          \"name\": \"Bug\"\n       }\n   }\n}"
+				},
+				"url": {
+					"raw": "http://172.30.27.127:8080/rest/api/2/issue",
+					"protocol": "http",
+					"host": [
+						"172",
+						"30",
+						"27",
+						"127"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"api",
+						"2",
+						"issue"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Task2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "nbobulan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fields\": {\n       \"project\":\n       { \n          \"key\": \"SIM\"\n       },\n       \"summary\": \"Test\",\n       \"description\": \"Creating post request\",\n       \"issuetype\": {\n          \"name\": \"Bug\"\n       }\n   }\n}"
+				},
+				"url": {
+					"raw": "http://172.30.27.127:8080/rest/api/2/issue/10018",
+					"protocol": "http",
+					"host": [
+						"172",
+						"30",
+						"27",
+						"127"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"api",
+						"2",
+						"issue",
+						"10018"
+					]
 				},
 				"description": ""
 			},
